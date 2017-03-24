@@ -1,1 +1,1 @@
-
+The first solutions was good and makeing almost all the testcases pass, but tsome test cases at the end are timeout. I was just using the dictionary to get the reference component and merging set when I see each of a component making a new componenet.
