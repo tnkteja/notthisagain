@@ -23,24 +23,20 @@ def MergeLists(headA, headB):
     nextB=headB.next
     
     while True:
-        one,after= (headA,headB) if headA.data < headB.data else (headB,headA)
-        
-        # Making a new tail
-        newTail.next=one
-        one.next=after
-        newTail=after
-        
-        if not nextA:
-            newTail.next=nextB
-            break
-        if not nextB:
-            newTail.next=nextA
-            break
-        
-        headA=nextA
-        nextA=headA.next
-        headB=nextB
-        nextB=headB.next
+
+        if not headA:
+            newTail.next=headB
+        if not headB:
+            newTail.next=headA
+
+        if headA.data < headB.data:
+            newTail=headA
+            newTail.next=headA
+            headA=headA.next
+        else:
+            newTail=headB
+            newTail.next=headB
+            headB=headB.next
         
     return newHead.next
 
