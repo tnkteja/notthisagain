@@ -1,0 +1,1 @@
+We have to find the unique 3 tuples which will make the sum zero.

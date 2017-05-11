@@ -1,0 +1,1 @@
+This can essentilly be a Splitarray with equal sum problem by sorting the array.

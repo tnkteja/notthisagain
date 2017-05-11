@@ -1,0 +1,1 @@
+Although it looks inefficient when loop exists as the fast pointer loops more times than the slow pointer. the ans could be.
